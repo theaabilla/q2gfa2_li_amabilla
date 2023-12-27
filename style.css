@@ -1,0 +1,89 @@
+*{margin: 0}
+.page{
+    background-image: url(/images/bgimagee.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+.pagetitle{
+    float: left;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.page nav a{
+    float: right;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.page h1{
+    text-align: center;
+    color:white ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 7%;
+    font-size: 60px;
+    text-shadow: 2px 2px rgb(115, 153, 209);
+}
+.gifs{
+    position: relative;
+    width: 100vw;
+    transform: translateX(100%);
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    z-index: 10s; 
+}
+.terrangif{
+    animation: movement1 20s ease-out 0s infinite;
+}
+.terrangif img{
+    width: 15vw;
+    margin-top: 10px;
+}
+@keyframes movement1 {
+    0%{transform: translateX(100vw);}
+    100%{transform: translateX(-100%);}
+}
+.saturngif{
+    animation: movement2 20s linear 0s infinite;
+    margin-top: 5px;
+}
+.saturngif img{
+    width: 20vw;
+}
+@keyframes movement2 {
+    0%{transform: translateX(100vw);}
+    100%{transform: translateX(-100%);}
+}
+.galaxygif{
+    animation: movement3 20s linear 10s infinite;
+    margin-bottom: 10%;
+}
+.galaxygif img{
+    width: 20vw;
+    margin-bottom: 5%;
+}
+@keyframes movement3 {
+    0%{transform:translate(-1000px, -500px);}
+    50%{transform: rotate(10deg);}
+    100%{transform:translate(1000px, 500px);}
+}
+.blackholegif{
+    animation: movement4 20s linear 2s infinite;
+}
+.blackholegif img{
+    width: 20vw;
+}
+@keyframes movement4 {
+    0%{transform: translateY(-100%);}
+    100%{transform: translateY(100vh);}
+}
