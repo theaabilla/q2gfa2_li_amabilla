@@ -1,6 +1,6 @@
 *{margin: 0}
 .page{
-    background-image: url(/images/bgimagee.jpg);
+    background-image: url(images/bgimagee.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
     height: 100vh;
@@ -78,12 +78,14 @@
     100%{transform:translate(1000px, 500px);}
 }
 .blackholegif{
-    animation: movement4 20s linear 2s infinite;
+    animation: movement4 20s linear 12s infinite;
+    margin-bottom: 10%;
 }
 .blackholegif img{
     width: 20vw;
 }
 @keyframes movement4 {
-    0%{transform: translateY(-100%);}
-    100%{transform: translateY(100vh);}
+    0%{transform:translate(-1000px, -500px);}
+    50%{transform: rotate(10deg);}
+    100%{transform:translate(1000px, 500px);}
 }
